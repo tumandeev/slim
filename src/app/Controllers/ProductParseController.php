@@ -105,7 +105,7 @@ class ProductParseController extends Controller
 
             $response->getBody()->write(json_encode([
                 'status' => true,
-                'message' => "Parsing data success completed",
+                'message' => "",
                 'result' => $data->rows()
             ]));
         }
