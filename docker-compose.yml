@@ -25,7 +25,8 @@ services:
       - ./db:/var/lib/clickhouse
     ulimits:
       nofile: 262144
-
+    networks:
+      - mpstats
   php:
     build:
       context: .

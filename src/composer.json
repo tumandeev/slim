@@ -3,7 +3,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Slim\\Mpstats\\": "src/"
+            "Slim\\Mpstats\\": "app/"
         }
     },
     "authors": [
@@ -13,6 +13,13 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "slim/slim": "4.x-dev"
+        "slim/slim": "4.x-dev",
+        "slim/psr7": "dev-master",
+        "smi2/phpclickhouse": "dev-master",
+        "php-di/php-di": "dev-master",
+        "guzzlehttp/guzzle": "7.9.x-dev"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "7.1.x-dev"
     }
 }
